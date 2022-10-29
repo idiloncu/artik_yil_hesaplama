@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class artik_yil {
+    public static void main(String[] args) {
+
+        int year;
+
+        Scanner yil=new Scanner(System.in);
+        System.out.print("YIL GİRİN : ");
+        year= yil.nextInt();
+        if (year%100==0)
+        {
+            if (year%400==0)
+            {
+                System.out.print(year + " ARTIK YILDIR");
+            }
+            else {
+                System.out.print(year+" ARTIK YIL DEĞİLDİR");
+            }
+        }
+        else if (year%4==0)
+        {
+            System.out.print(year+" ARTIK YILDIR");
+        }
+        else
+        {
+            System.out.print(year+" ARTIK YIL DEĞİLDİR");
+        }
+    }
+}
